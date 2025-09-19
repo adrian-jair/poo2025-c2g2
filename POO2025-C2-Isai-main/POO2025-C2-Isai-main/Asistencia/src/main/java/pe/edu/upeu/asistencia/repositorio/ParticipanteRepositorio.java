@@ -2,8 +2,8 @@ package pe.edu.upeu.asistencia.repositorio;
 
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
-import pe.edu.upeu.asistencia.enums.CARRERA;
-import pe.edu.upeu.asistencia.enums.TIPO_PARTICIPANTE;
+import pe.edu.upeu.asistencia.enums.Carrera;
+import pe.edu.upeu.asistencia.enums.TipoParticipante;
 import pe.edu.upeu.asistencia.modelo.Participante;
 
 import java.util.ArrayList;
@@ -18,7 +18,7 @@ public abstract class ParticipanteRepositorio {
                         new SimpleStringProperty("60665335"),
                         new SimpleStringProperty("Juan"),
                         new SimpleStringProperty("Estrada"),
-                        new SimpleBooleanProperty(true), CARRERA.Sistemas, TIPO_PARTICIPANTE.Asistente
+                        new SimpleBooleanProperty(true), Carrera.SISTEMAS, TipoParticipante.ASISTENTE
                 )
         );
         listaParticipantes.add(
@@ -26,7 +26,7 @@ public abstract class ParticipanteRepositorio {
                             new SimpleStringProperty("29393840"),
                             new SimpleStringProperty("Pedro"),
                             new SimpleStringProperty("ramunda"),
-                            new SimpleBooleanProperty(true), CARRERA.Sistemas, TIPO_PARTICIPANTE.Asistente
+                            new SimpleBooleanProperty(true), Carrera.SISTEMAS, TipoParticipante.ASISTENTE
                     )
             );
         return listaParticipantes;
