@@ -1,0 +1,2 @@
+nombre=putito
+dni=53535353

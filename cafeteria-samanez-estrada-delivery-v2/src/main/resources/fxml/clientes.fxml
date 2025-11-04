@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="pe.edu.cafeteria.controller.ClienteController" spacing="10">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <HBox spacing="8">
+        <Label text="Nombre:"/>
+        <TextField fx:id="txtNombre" promptText="Nombre del cliente" prefWidth="200"/>
+        <Label text="DNI:"/>
+        <TextField fx:id="txtDni" promptText="Documento (DNI)" prefWidth="130"/>
+        <Label text="Tel:"/>
+        <TextField fx:id="txtTelefono" promptText="Opcional" prefWidth="120"/>
+        <Label text="Dir:"/>
+        <TextField fx:id="txtDireccion" promptText="Dirección (opcional)" prefWidth="200"/>
+    </HBox>
+
+    <HBox spacing="8">
+        <Button text="Agregar" onAction="#agregar"/>
+        <Button text="Editar" onAction="#editar"/>
+        <Button text="Eliminar" onAction="#eliminar"/>
+        <Button text="SOLICITAR DELIVERY" onAction="#solicitarDelivery"/>
+    </HBox>
+
+    <TableView fx:id="tablaClientes" onMouseClicked="#cargarSeleccion" prefHeight="260">
+        <columns>
+            <TableColumn fx:id="colNombre" text="Nombre" prefWidth="200"/>
+            <TableColumn fx:id="colDni" text="DNI" prefWidth="120"/>
+            <TableColumn fx:id="colTelefono" text="Teléfono" prefWidth="150"/>
+            <TableColumn fx:id="colDireccion" text="Dirección" prefWidth="350"/>
+        </columns>
+    </TableView>
+</VBox>

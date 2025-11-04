@@ -1,0 +1,2 @@
+nombre=juabn
+dni=3456478

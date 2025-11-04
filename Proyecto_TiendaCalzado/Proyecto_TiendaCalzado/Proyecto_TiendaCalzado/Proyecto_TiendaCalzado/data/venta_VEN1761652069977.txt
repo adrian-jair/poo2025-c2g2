@@ -1,0 +1,2 @@
+nombre=manuela
+dni=01492863

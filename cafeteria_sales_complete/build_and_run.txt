@@ -1,0 +1,16 @@
+Instrucciones para compilar y ejecutar (Linux / macOS / Windows con Git Bash):
+
+1) Compilar todos los .java y crear carpeta out:
+   mkdir -p out
+   javac -d out $(find src -name "*.java")
+
+2) Ejecutar (desde la raiz del proyecto):
+   java -cp out app.Main
+
+3) (Opcional) Crear un JAR ejecutable:
+   jar cfe cafeteria_sales.jar app.Main -C out .
+
+   Ejecutar el JAR:
+   java -jar cafeteria_sales.jar
+
+Nota: Los archivos de datos (productos.dat, clientes.dat) se crearán en la carpeta desde donde ejecutes la app.
